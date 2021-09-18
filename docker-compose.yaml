@@ -1,3 +1,5 @@
+apiVersion: apps/v1
+kind: Deployment
 version: '3'
 services:
   mongodb:
@@ -133,11 +135,11 @@ services:
       - shipping
       - payment
     ports:
-      - "8080:8080"
+      - "80:8080"
     networks:
       - robot-shop
     deploy:
-      replicas: 1
+      replicas: 3
       restart_policy:
         condition: on-failure
     # Uncomment to enable Instana EUM
