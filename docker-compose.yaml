@@ -1,5 +1,3 @@
-apiVersion: apps/v1
-kind: Deployment
 version: '3'
 services:
   mongodb:
@@ -135,7 +133,7 @@ services:
       - shipping
       - payment
     ports:
-      - "80:8080"
+      - "8080:8080"
     networks:
       - robot-shop
     deploy:
