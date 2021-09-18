@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: rating
+      io.kompose.service: ratings
   strategy: {}
   template:
     metadata:
